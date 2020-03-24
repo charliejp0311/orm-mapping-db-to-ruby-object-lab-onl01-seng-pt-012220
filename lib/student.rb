@@ -70,10 +70,10 @@ class Student
       LIMIT  ?;
     SQL
     binding.pry
-    # DB[:conn].execute(sql, x).map do |row|
-    #   # binding.pry
-    #   self.new_from_db(row)
-    # end
+    DB[:conn].execute(sql, x).map do |row|
+      # binding.pry
+      self.new_from_db(row)
+    end
   end
 
 
